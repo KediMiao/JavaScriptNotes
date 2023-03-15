@@ -55,3 +55,27 @@ y += 1; //x = 4, y = 4
 
 
 
+//Three different ways of Function
+
+function getMilk(money, cost) {  
+  var bottles = Math.floor(money / cost); 
+  console.log("leaveHouse");
+  console.log("moveRight");
+  console.log("buying " + bottles + " milks");
+  console.log("buying " + calsBottles(money, cost) + " milks")
+  console.log("moveLeft");
+  console.log("enterHouse");
+  return money % cost;
+}
+
+var change = getMilk(5, 1.5);
+console.log(change);
+console.log(getMilk(5, 1.5));
+//Be aware these two are different, render different things
+
+
+function calsBottles(money, cost) {
+    var bottles = Math.floor(money / cost);
+    return bottles;
+}
+
