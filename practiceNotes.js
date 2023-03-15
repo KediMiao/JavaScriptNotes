@@ -104,3 +104,80 @@ if (n > 30 && n <= 70) {
 }
 
 console.log( yourName + " and " + crashName + " of be together is " + n + "%");
+
+
+
+
+
+var guestList = ["Jack", "Angela", "Pam", "James", "Lara", "Jason"];
+console.log(guestList[1]); //Angela
+console.log(guestList.includes("Jack")); //true
+
+function isGuestInTheList(name) {
+    var guestList = ["Jack", "Angela", "Pam", "James", "Lara", "Jason"]; 
+    if (guestList.includes(name) === true) {
+        return "Welcome, " + name;
+    } else {
+        return "Maybe Next Time."
+    }
+    
+}
+
+console.log(isGuestInTheList("Jack")); //Welcome, Jack
+console.log(isGuestInTheList("Sam")); //Maybe Next Time.
+
+FizzBuzz
+
+array.push(); //push items into the array, always on the end.
+array.pop; //Take the last one out of the array.
+var output = [];
+var count = 1;
+function fizzBuzz() {
+    if (count % 3 === 0 && count % 5 === 0){
+        output.push("FizzBuzz");
+        console.log(output);
+    } else if (count % 3 === 0) {
+        output.push("Fizz");
+        console.log(output);
+             
+    }else if (count % 5 === 0) {
+        output.push("Buzz");
+        console.log(output);
+    } else {
+        output.push(count);
+        console.log(output);
+    }
+    count++;
+}
+   
+
+//who is pay for lunch
+function whosPaying(names) {
+    var peoplePayForLunch = Math.floor (Math.random() * names.length) ; // [0 - length) --> [0 to length - 1 Integer]
+    return names[peoplePayForLunch] + " is going to buy lunch today!"
+     
+}
+
+
+//while loop
+var output = [];
+var count = 1;
+function fizzBuzz() {
+        while (count <=100) {
+            if (count % 3 === 0 && count % 5 === 0){
+            output.push("FizzBuzz");
+        } else if (count % 3 === 0) {
+            output.push("Fizz");
+                 
+        }else if (count % 5 === 0) {
+            output.push("Buzz");
+        } else {
+            output.push(count);
+        }
+        count++;
+        console.log(output);
+    }
+}
+
+    
+   
