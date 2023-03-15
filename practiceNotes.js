@@ -79,3 +79,11 @@ function calsBottles(money, cost) {
     return bottles;
 }
 
+
+console.log(Math.pow(7,3));
+// 7 ^ 3
+
+console.log(Math.round(3.5)); //4
+console.log(Math.round(3.4)); //3
+//round down the number to the closest one 
+
