@@ -179,5 +179,35 @@ function fizzBuzz() {
     }
 }
 
-    
-   
+
+//beer songs
+   function bottlesOfBeerSong() {
+    var beerBottles = 99;
+    while (beerBottles !== 0) {
+        console.log(beerBottles + " bottles of beer on the wall, " + beerBottles + " bottles of beer. Take 1 down, pass it around, " + (beerBottles - 1) + "bottles of beer on the wall.")
+        beerBottles--;
+    }
+    console.log("No more bottles of beer on the wall, no more bottles of beer. Go to the store and buy some more, 99 bottles of beer on the wall.")
+}
+
+
+//For Loop
+function fibonacciGenerator (n) {
+    var fibo = [];
+    if (n >= 1) {//assume n will not be 0
+        fibo.push(0);
+    }
+    if (n >= 2) {
+        fibo.push(1);
+    }
+    if (n > 2) {
+        var fiboNum = 1;
+        for (var i = 1; i < n - 1; i++) {
+            fibo.push(fiboNum);
+            fiboNum = fiboNum + fibo[i];
+        }
+    }
+    console.log(fibo);
+}
+
+
