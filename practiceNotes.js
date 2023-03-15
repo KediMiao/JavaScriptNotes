@@ -87,3 +87,20 @@ console.log(Math.round(3.5)); //4
 console.log(Math.round(3.4)); //3
 //round down the number to the closest one 
 
+
+//love calculator, simple learning some if else and Math.random
+var yourName = prompt("What is your name?");
+var crashName = prompt("WHat is your crush's name?")
+var n = Math.random();
+n = Math.floor(n * 101); // 0 - 100
+if (n > 30 && n <= 70) {
+    // === euqal  !== not equal > < >= <=
+    // && || !
+    alert("Your Love Score is " + n + ". It's worth a try");
+} else if (n > 70){
+    alert("Your Love Score is " + n + ". OMG!" ); 
+} else {
+    alert("Your Love Score is " + n + ". RUN!!!"); 
+}
+
+console.log( yourName + " and " + crashName + " of be together is " + n + "%");
